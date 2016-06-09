@@ -58,7 +58,7 @@ public class Main extends Application {
 
         ArrayList<Ant> closeAnts = new ArrayList<>();
         for(int i = 0; i < ANT_COUNT; i++){
-            if(Math.abs(testAnt.x - ants.get(i).x) < 5 || Math.abs(testAnt.y - ants.get(i).y) < 5){
+            if(Math.abs(testAnt.x - ants.get(i).x) < 10 && Math.abs(testAnt.y - ants.get(i).y) < 10){
                 closeAnts.add(ants.get(i));
             }
         }
